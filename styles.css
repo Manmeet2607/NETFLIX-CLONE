@@ -1,0 +1,465 @@
+
+:root
+{
+    --primary-color:#e50914;
+    --dark-color: #141414;
+}
+
+*
+{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: #000;
+    color:white;
+}
+
+.showcase{
+    width:100%;
+    position:relative;
+    height: 94vh;
+    background: url('https://i.ibb.co/vXqDmnh/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.showcase::after {
+    content: "";
+    background: rgba(5, 5, 5, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+.showcase-top
+{
+ position:relative;
+ z-index:2;
+ text-align: center;
+ color:white;
+ height: 90px;
+
+}
+
+.showcase-top img
+{
+    height :45px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase .btn
+{
+    position:absolute;
+    right:0;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+ background: var(--primary-color);
+ padding: 2px;
+ border: none;
+ width: 5.5rem;
+ height: 2.2rem;
+ border-radius: 0.4rem;
+ font-size: 16px
+}
+
+.showcase-bottom
+{
+ margin-top: 25px;
+ position:relative;
+ z-index: 2;
+ text-align: center;
+ color:white;
+ width:100%;
+ justify-content: center;
+
+}
+
+.showcase-bottom h1{
+    font-size: 86px;
+}
+
+.showcase-bottom p{
+    font-size: 30px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+
+ .btn-xl
+ {
+    color: aliceblue;
+    background: var(--primary-color);
+    padding: 2px;
+    border: none;
+    width: 32rem;
+    height: 5rem;
+    font-size: 30px;
+ }
+
+.showcase-btn
+ {
+    margin-left: 1rem;
+
+ }
+
+ .tabs
+ {
+     background: var(--dark-color);
+     padding-top:1rem;
+     padding-left: 13rem;
+     padding-right: 13rem;
+     border-bottom: 3px solid #3d3d3d;
+     border-right:none;
+ }
+
+ .tabs .container{
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap:1rem;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+
+
+ }
+
+ .tabs .container > div:hover
+ {
+   color:grey;
+   cursor:pointer;
+ }
+
+ .tabs p{
+    padding-top: 1.2rem;
+    font-size: 1.2rem;
+ }
+
+ .tabs .container > div{
+     padding: 2rem 0;
+ }
+
+ .tab-border
+ {
+     border-bottom: 5px solid red
+ }
+
+
+
+ .tab-content {
+	padding: 3rem 0;
+	background: #000;
+	color: #fff;
+}
+
+.tab-c-1 p{
+    font-size: 32px;
+    padding:0.5rem;
+}
+
+.tab-c-1 img{
+    width:10cm;
+    height: 7cm;
+}
+
+
+
+#tab-1-content .tab-c-1
+{
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+	align-items: center;
+	justify-content: center;
+    padding-left: 12rem;
+    padding-right:12rem;
+
+}
+
+ .btn-tab-1
+ {
+     background-color:red;
+     color:white;
+     padding: 0.8rem 1.2rem;
+     font-size:16px;
+ }
+
+ .btn-tab-2
+ {
+    background-color: #e50914;
+    color:white;
+    padding: 0.7rem 2rem;
+    font-size: 18px;
+ }
+
+ .tab-content2
+ {
+     padding: 0 12rem 3rem 12rem;
+ }
+ .tab-content2 .tab-c-2
+ {
+     display:grid;
+     grid-template-columns: 2fr 1fr;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+
+ .tab-c-2 p
+ {
+  font-size: 30px;
+  padding:0.8rem;
+
+ }
+
+ .tab-c-2btm
+ {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+ .tab-c-2btm img
+ {
+     height: 10rem;
+     width: 17rem;
+     margin-bottom: 1rem;
+     margin-top: 2.5rem;
+ }
+
+ .tab-c-2btm .part2
+ {
+     margin-top: 0.5rem;
+     color:grey;
+     font-size: 12px;
+ }
+
+ .tab-content-top
+ {
+     margin:3rem;
+     text-align: center;
+     align-items: center;
+ }
+
+ .tab-content-top p{
+     font-size: 30px;
+     margin-bottom:1rem;
+ }
+
+
+ .tab-content-top button
+ {
+     color: white;
+     background-color:red;
+     padding:0.8rem 1.2rem;
+     font-size:16px;
+ }
+
+ .table {
+    width: 65%;
+	margin:auto;;
+	border-collapse: collapse;
+
+  }
+
+  .table thead th {
+	padding: 0.8rem;
+}
+
+
+.table tbody tr td {
+	color: #999;
+	padding: 0.8rem 1.2rem;
+	text-align: center;
+}
+
+.table tbody tr td:first-child {
+	text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+	background: #222;
+}
+
+.footer .footer-cols ul li a
+{
+    color:#999;
+    text-decoration: none!important;
+}
+
+.footer-cols{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+
+
+}
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer li {
+	line-height: 1.9;
+    list-style-type:none;
+}
+
+.footer{
+    max-width:70%;
+    margin:auto;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+	display: none;
+	opacity: 0;
+}
+
+.show {
+	display: block !important;
+	opacity: 1 !important;
+	transition: all 1000 ease-in;
+}
+
+@media(max-width:750px)
+{
+    .showcase::after {
+		background: rgba(0, 0, 0, 0.6);
+		box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
+	}
+    .showcase-bottom h1 {
+		font-size: 2.5rem;
+		line-height: 1;
+	}
+
+	.showcase-bottom p {
+		font-size: 1rem;
+	}
+
+    #tab-1-content .tab-c-1
+    {
+        grid-template-columns: 1fr;
+		text-align: center;
+    }
+
+    #tab-2-content .tab-c-2
+    {
+        grid-template-columns: 1fr;
+		text-align: center;
+
+    }
+
+    .tab-content2 {
+        padding: 0px 10rem 3rem;
+    }
+
+    .tab-c-2 p{
+        font-size: 1rem;
+    }
+
+    .tab-c-2btm
+    {
+    grid-template-columns: 1fr;
+    }
+
+    .btn-tab-2
+    {
+        margin:auto;
+        width:11rem;
+        font-size: 0.7rem;
+        padding-left: 0.1rem;
+        padding-right:0.1rem;
+
+    }
+
+    .footer{
+        max-width:90%;
+        margin:auto;
+    }
+
+    .footer-cols{
+        font-size:0.6rem;
+    }
+
+    .table tbody tr td
+    {
+        padding: 0.6rem 1rem;
+        font-size:8px;
+    }
+
+    .table{
+            margin:50px auto 50px auto;
+            width:60%;
+     }
+
+
+}
+
+@media(max-width:1050px)
+{
+    .tab-c-2btm img{
+        height: 10rem;
+        width:14rem;
+    }
+
+    .tab-c-1 button
+    {
+        font-size:12px;
+        width: 14rem;
+    }
+
+    .tab-c-1 p{
+        font-size: 20px;
+    }
+
+    .tab-c-2 p{
+        font-size: 1.2rem;
+    }
+
+    .btn-tab-2
+    {
+        margin:auto;
+        width:11rem;
+        font-size: 0.8rem;
+        padding-left: 0.08rem;
+        padding-right:0.08rem;
+
+    }
+
+    .tab-content-top p{
+        font-size:1.7rem;
+    }
+
+    .footer-cols{
+        font-size:0.8rem;
+    }
+
+
+
+    .table tbody tr td {
+	padding: 0.6rem 1rem;
+    font-size:14px;
+    }
+
+    .table{
+        margin:50px auto 50px auto;
+        width:80%;
+    }
+}
